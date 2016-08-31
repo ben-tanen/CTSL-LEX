@@ -337,7 +337,9 @@ function updateNodes() {
                     n['size']  = 1;
                 
                 } else if (option == 'CTSL Selected Fingers' || option == 'ASL Selected Fingers') {
-                    if (node_value != 'thumb') {
+                    if (node_value == 'N/A') {
+                        fingers = [ ];
+                    } else if (node_value != 'thumb') {
                         fingers = node_value.replace('i', 'index').replace('m', 'middle').replace('r', 'ring').replace('p', 'pinky').match(/((pinky)|(ring)|(middle)|(index))/g);
                     } else {
                         fingers = ['thumb'];

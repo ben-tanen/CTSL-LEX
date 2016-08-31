@@ -1,4 +1,4 @@
-## CTSL-LEX (AT Fellows Project)
+## CTSL-LEX
 
 #### About
 
